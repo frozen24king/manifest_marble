@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- xiaomi-sm8450 specific forks -->
+
+ <remote name="LineageOS-hals"
+        fetch="https://github.com/LineageOS"
+        sync-c="true"
+        sync-j="4"
+        sync-tags="false" />
+
+ <remote name="eqs-development"
+        fetch="https://github.com/eqs-development"
+        sync-c="true"
+        sync-j="4"
+        sync-tags="false" />
+
+<remote name="hardware-xiaomi"
+        fetch="https://github.com/frozen24king"
+        sync-c="true"
+        sync-j="4"
+        sync-tags="false" />     
+
+ <!-- LineageOS-hals -->
+ <project path="hardware/qcom-caf/sm8450/audio/agm" name="android_vendor_qcom_opensource_agm" revision="lineage-20.0-caf-sm8450" remote="LineageOS-hals" />
+ <project path="hardware/qcom-caf/sm8450/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" revision="lineage-20.0-caf-sm8450" remote="LineageOS-hals" />
+ <project path="hardware/qcom-caf/sm8450/audio/primary-hal" name="android_hardware_qcom_audio-ar" revision="lineage-20.0-caf-sm8450" remote="LineageOS-hals" />
+ <project path="hardware/qcom-caf/sm8450/display" name="android_hardware_qcom_display" revision="lineage-20.0-caf-sm8450" remote="LineageOS-hals" />
+ <project path="hardware/qcom-caf/sm8450/media" name="android_hardware_qcom_media" revision="lineage-20.0-caf-sm8450" remote="LineageOS-hals" />
+ <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" revision="lineage-20.0" remote="LineageOS-hals" />
+ <project path="vendor/qcom/opensource/agm" name="android_vendor_qcom_opensource_agm" revision="lineage-20.0" remote="eqs-development"/>
+ <project path="vendor/qcom/opensource/pal" name="android_vendor_qcom_opensource_pal" revision="lineage-20.0" remote="eqs-development"/>
+
+ <!-- hardware-xiaomi -->
+ <project path="hardware/xiaomi" name="hardware_xiaomi" revision="marble-13" remote="hardware-xiaomi"/>
+
+ <!-- opensource-display -->
+<project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" revision="lineage-20.0" remote="LineageOS-hals" />
+<project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" revision="lineage-20.0" remote="LineageOS-hals" />
+<project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" revision="lineage-20.0" remote="LineageOS-hals" />
+
+</manifest>
