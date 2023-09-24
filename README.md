@@ -78,7 +78,7 @@ $ mkdir WORKSPACE
 $ cd WORKSPACE
 
 # Install Repo in the created directory
-$ repo init -u https://github.com/frozen24king/manifest_marble.git -b marble-13 --git-lfs
+$ repo init -u https://github.com/kenway214/manifest_marble.git -b marble-13 --git-lfs
 ```
 
 ### 1.4 Downloading the source tree ###
